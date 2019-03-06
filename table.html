@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table</title>
+
+<style type="text/css">
+	div{
+		display: table;
+		margin: 0 auto;
+		border: solid black 2px;
+		text-align: center;
+		background-color: #dae6f7;
+	}
+	caption{
+		margin-bottom: 10px;
+	}
+	th{
+		background-color: powderblue;
+	}
+	caption,th{
+		color:blue;
+		font-weight: bold;
+	}
+	.blue-color{
+		color:blue;
+		font-weight: bold;
+		vertical-align: top;
+		text-align: left;
+		padding: 4px;
+		background-color: powderblue;
+	}
+	table{
+		border: solid grey 1px;
+		border-collapse: collapse;
+		margin: 10px;
+	}
+	th{
+		border: solid grey 1px;
+		border-collapse: collapse;
+		padding: 4px;
+	}
+	td{
+		border: solid grey 1px;
+		border-collapse: collapse;
+		vertical-align: bottom;
+		text-align: right;
+		padding: 5px;
+		background-color: white;
+	}
+</style>
+
+</head>
+<body >
+	<div>
+		<table>
+			<caption>Energy Expenditures for Each Region<br>(millions of dollars)</caption>
+			<tr>
+				<th colspan="2" rowspan="4"></th>
+				<th colspan="2">Type</th>
+			</tr>
+			<tr>
+				<th>Residential Customers</th>
+				<th>Buisness Customers</th>
+			</tr>
+			<tr>
+				<th>Expenditures</th>
+				<th>Expenditutres</th>
+			</tr>
+			<tr>
+				<th>Sum</th>
+				<th>Sum</th>
+			</tr>
+			<tr>
+				<td class="blue-color">Region</td>
+				<td class="blue-color">Division</td>
+				<td rowspan="2">$7,477</td>
+				<td rowspan="2">$5,129</td>
+			</tr>
+			<tr>
+				<td rowspan="2" class="blue-color">Northeast</td>
+				<td class="blue-color">New England</td>
+			</tr>
+			<tr>
+				<td class="blue-color">Middle Atlantic</td>
+				<td>$19,379</td>
+				<td>$15,078</td>
+			</tr>
+			<tr>
+				<td rowspan="2" class="blue-color">West</td>
+				<td class="blue-color">Mountain</td>
+				<td>$5,476</td>
+				<td>$4,729</td>
+			</tr>
+			<tr>
+				<td class="blue-color">Pacific</td>
+				<td>$13,959</td>
+				<td>$12,619</td>
+			</tr>
+		</table>	
+	</div>
+</body>
+</html>
