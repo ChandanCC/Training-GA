@@ -1,0 +1,50 @@
+body {
+  background-image: linear-gradient(blue, pink);
+}
+.main {
+  text-align: center;
+}
+.heading {
+  background-color: transparent;
+  text-align: center;
+}
+#in-box {
+  width: 100%;
+  height: 6vh;
+}
+#todos {
+  list-style-type: none;
+  text-align: left;
+  padding-inline-start: 0;
+}
+li {
+  height: 6vh;
+  padding: 1.5vh;
+  border-bottom: 1px solid lightgrey;
+}
+.list {
+  display: flex;
+}
+
+.cross {
+  display: none;
+  color: red;
+  cursor: pointer;
+}
+.striked {
+  text-decoration: line-through solid grey;
+  color: grey;
+}
+.title {
+  padding-left: 2vw;
+  padding-top: 0;
+  flex: 1;
+  cursor: pointer;
+}
+.status {
+  cursor: pointer;
+}
+.hidden-ip-box {
+  margin-left: 2vw;
+  overflow: hidden;
+}

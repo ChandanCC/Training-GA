@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/model.js"></script>
+    <script src="js/controller.js"></script>
+    <script>
+      var controller;
+      window.onload = function() {
+        controller = new Controller();
+        controller.render();
+        document.getElementById("in-box").focus();
+      };
+    </script>
+  </head>
+  <body>
+    <div class="container main">
+      <p class="display-4 text-secondary">todos</p>
+      <input type="text" placeholder="What needs to be done.." id="in-box" />
+      <ul id="todos"></ul>
+    </div>
+  </body>
+</html>
